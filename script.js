@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleResize() {
         const baseWidth = 1600;
         const baseHeight = 900;
-        const padding = 20; // Margin around the slide
+        const padding = 0; // Removed margin to maximize screen usage
 
         const availableWidth = window.innerWidth - (padding * 2);
         const availableHeight = window.innerHeight - (padding * 2);
