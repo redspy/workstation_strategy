@@ -158,6 +158,35 @@ li::before {
     align-items: center;
 }
 
+/* Portrait / Mobile Layout Overrides */
+.presentation-container.portrait .grid-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    overflow-y: auto;
+    /* Allow scrolling if content overflows in slide */
+    display: block;
+    /* Use block to stack naturally */
+}
+
+.presentation-container.portrait .slide {
+    padding: 30px;
+    justify-content: flex-start;
+    /* Top align content */
+    overflow-y: auto;
+}
+
+.presentation-container.portrait .card {
+    margin-bottom: 20px;
+    height: auto;
+    /* Allow auto height */
+}
+
+.presentation-container.portrait h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
 .content-center {
     text-align: center;
     align-items: center;
