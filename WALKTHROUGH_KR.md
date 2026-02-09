@@ -20,11 +20,9 @@
 이 슬라이드는 생성된 "미래형 워크스테이션" 컨셉 아트와 글래스모피즘 카드를 사용한 레이아웃을 보여줍니다.
 ![Product Overview](images/slide_2.png)
 
-### 슬라이드 3: Samsung 5D vs GE 4D 비교 (신규)
-사용자의 요청에 따라 삼성의 5D Viewer와 GE의 4D View를 비교하는 슬라이드를 추가했습니다.
-- **Samsung**: 자동화, AI 내비게이션, 크리스탈 뷰 (형태학적 진단)
-- **GE**: 정밀 수동 제어, STIC/OmniView, HDlive 실루엣 (심층 분석)
-![Comparison Slide](images/slide_3_comparison.png)
+### 슬라이드 3: Comparison (Revised) - Why Workstation?
+5D Viewer의 한계(단순 뷰어, Raw Data 편집 불가)를 명확히 하고, 이를 극복하는 **Workstation 솔루션(Full Processing, AI Automation)**을 강조하는 방향으로 수정했습니다.
+![Revised Comparison Slide](images/slide_3_revised.png)
 
 ### 브라우저 녹화
 전체 검증 세션은 아래에서 확인할 수 있습니다:

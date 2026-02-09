@@ -11,5 +11,7 @@
 - [x] GitHub 푸시 (`https://github.com/redspy/workstation_sterategy.git`) <!-- id: 8 -->
 - [x] Samsung 5D vs GE 4D 기능 조사 <!-- id: 9 -->
 - [x] `index.html`에 비교 슬라이드(Slide 3) 추가 <!-- id: 10 -->
-- [x] 한국어 문서 업데이트 <!-- id: 11 -->
-- [x] 새로운 슬라이드 검증 <!-- id: 12 -->
+- [x] GitHub 리모트 URL 수정 (오타 수정) <!-- id: 13 -->
+- [x] 슬라이드 3 수정: 5D Viewer 약점 및 Workstation 전략 강조 <!-- id: 14 -->
+- [x] 수정된 내용으로 한국어 문서 업데이트 <!-- id: 15 -->
+- [x] 수정된 슬라이드 검증 <!-- id: 16 -->
