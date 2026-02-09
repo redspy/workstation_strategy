@@ -4,11 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const pageIndicator = document.getElementById('page-indicator');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
+    const container = document.querySelector('.presentation-container');
 
     // Initialize
     showSlide(currentSlide);
+    handleResize(); // Initial scaling
 
     // Event Listeners
+    window.addEventListener('resize', handleResize);
     prevBtn.addEventListener('click', () => changeSlide(-1));
     nextBtn.addEventListener('click', () => changeSlide(1));
 
@@ -54,6 +57,26 @@ document.addEventListener('DOMContentLoaded', () => {
         pageIndicator.textContent = `${currentSlide + 1} / ${slides.length}`;
         prevBtn.disabled = currentSlide === 0;
         nextBtn.disabled = currentSlide === slides.length - 1;
+    }
+
+    function handleResize() {
+        const baseWidth = 1600;
+        const baseHeight = 900;
+        const padding = 20; // Margin around the slide
+
+        const availableWidth = window.innerWidth - (padding * 2);
+        const availableHeight = window.innerHeight - (padding * 2);
+
+        const scaleX = availableWidth / baseWidth;
+        const scaleY = availableHeight / baseHeight;
+
+        // Scale to fit within the viewport while maintaining aspect ratio
+        let scale = Math.min(scaleX, scaleY);
+
+        // Optionally prevent upscaling if you don't want it to get pixellated on huge screens
+        // scale = Math.min(scale, 1); 
+
+        container.style.transform = `scale(${scale})`;
     }
 
     function animateSlideContent(slideElement) {

@@ -1,14 +1,19 @@
 :root {
-    --primary-color: #00d4ff; /* Bright Cyan */
-    --secondary-color: #0056b3; /* Deep Blue */
-    --accent-color: #ff007a; /* Neon Pink/Red for highlights */
-    --bg-color: #050a14; /* Very Dark Navy */
+    --primary-color: #00d4ff;
+    /* Bright Cyan */
+    --secondary-color: #0056b3;
+    /* Deep Blue */
+    --accent-color: #ff007a;
+    /* Neon Pink/Red for highlights */
+    --bg-color: #050a14;
+    /* Very Dark Navy */
     --text-color: #ffffff;
     --text-muted: #a0aab5;
     --glass-bg: rgba(255, 255, 255, 0.05);
     --glass-border: rgba(255, 255, 255, 0.1);
     --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    --font-heading: 'Orbitron', 'Pretendard', sans-serif; /* Tech feel */
+    --font-heading: 'Orbitron', 'Pretendard', sans-serif;
+    /* Tech feel */
     --font-body: 'Inter', 'Pretendard', sans-serif;
 }
 
@@ -33,11 +38,13 @@ body {
 }
 
 /* Presentation Container */
+/* Presentation Container - Fixed Resolution for Scaling */
 .presentation-container {
-    width: 95%;
-    max-width: 1400px;
-    aspect-ratio: 16 / 9;
-    background: rgba(5, 10, 20, 0.7); /* Dark semi-transparent overlay */
+    width: 1600px;
+    /* Base resolution width */
+    height: 900px;
+    /* Base resolution height (16:9) */
+    background: rgba(5, 10, 20, 0.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--glass-border);
@@ -47,12 +54,15 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    /* Transformation origin for scaling */
+    transform-origin: center center;
 }
 
 /* Slide Styling */
 .slide {
     flex: 1;
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     padding: 60px 80px;
     flex-direction: column;
     justify-content: center;
@@ -69,6 +79,7 @@ body {
         opacity: 0;
         transform: scale(0.95) translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: scale(1) translateY(0);
@@ -172,7 +183,7 @@ li::before {
 .img-container {
     width: 100%;
     height: 350px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     border: 1px solid var(--glass-border);
     border-radius: 12px;
     display: flex;
@@ -229,7 +240,7 @@ li::before {
 .chart-container {
     margin-top: 2rem;
     padding: 20px;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 12px;
 }
 
@@ -264,14 +275,16 @@ li::before {
     font-size: 0.8rem;
     color: #fff;
     font-weight: bold;
-    width: 0; /* Animated */
+    width: 0;
+    /* Animated */
     transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
     box-shadow: 0 0 10px currentColor;
 }
 
 .fill-gray {
     background: linear-gradient(90deg, #445, #778);
-    color: #445; /* Glow color adjustment */
+    color: #445;
+    /* Glow color adjustment */
 }
 
 .fill-blue {
@@ -356,7 +369,9 @@ li::before {
 }
 
 @keyframes simpleFadeIn {
-    to { opacity: 1; }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Title Slide Specifics */
