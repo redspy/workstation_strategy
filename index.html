@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GE 4D View 분석 및 자사 전략</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&family=Pretendard:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="presentation-container">
+
+        <!-- Slide 1: Title -->
+        <div class="slide title-slide active">
+            <h1 class="glow-text">GE 4D View 분석 및<br>자사 전략 Q&A</h1>
+            <p class="subtitle">기술 스펙 분석 및 Samsung Medison Workstation 개발 전략</p>
+            <p style="font-size: 1rem; color: var(--text-muted); opacity: 0.7;">Cloud 제거 및 이미지 수정 버전</p>
+        </div>
+
+        <!-- Slide 2: Product Overview -->
+        <div class="slide">
+            <h2>Product Overview</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>GE Voluson 4D View란?</h3>
+                    <p>초음파 장비에서 획득한 3D/4D 볼륨 데이터(.vol)를 PC에서 오프라인으로 분석하는 전문 소프트웨어입니다.</p>
+                    <div class="card" style="margin-top: 30px;">
+                        <h3>핵심 가치</h3>
+                        <ul>
+                            <li><strong>장비 가동률 극대화:</strong> 획득(Acquisition)과 분석(Analysis)을 분리하여 장비 회전율을 높입니다.</li>
+                            <li><strong>사후 정밀 진단:</strong> 검사 당시 놓친 부분을 정밀하게 재확인(Re-measurement) 가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <!-- Using the generated concept image here -->
+                    <img src="images/workstation_concept.png" alt="Workstation Concept">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Business Model -->
+        <div class="slide">
+            <h2>Business Model & Monetization</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>1. Licensing Strategy</h3>
+                    <p><strong>USB Dongle 방식:</strong> 물리적 락인(Lock-in)과 불법 복제 방지를 통해 하드웨어 자산화 전략을 고수합니다.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Upselling</h3>
+                    <p>기본 뷰어 외 고급 기능(STIC, HDlive, VCI)을 별도 옵션(Key)으로 판매하여 추가 수익을 창출합니다.</p>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <h3>3. Ecosystem Strategy</h3>
+                    <p>장비 번들링을 통해 병원 워크플로우를 GE 생태계에 종속시키며, 향후 하드웨어 재구매를 유도하는 강력한 Lock-in 효과를 가집니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Core Visualization -->
+        <div class="slide">
+            <h2>Core Visualization Capabilities</h2>
+            <table class="vs-table">
+                <thead>
+                    <tr>
+                        <th width="20%">기능</th>
+                        <th width="40%">GE Description</th>
+                        <th width="40%">Samsung Counterpart</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>MPR</strong></td>
+                        <td>Axial, Coronal, Sagittal 3가지 직교 단면 동시 표시. 입체적 위치 관계 파악.</td>
+                        <td class="samsung-highlight">Multi-Planar View</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TUI</strong></td>
+                        <td>CT/MRI 처럼 일정한 간격의 단면(Slice)으로 펼쳐서 보여줌 (척추 기형 스크리닝 등).</td>
+                        <td class="samsung-highlight">MSV (Multi-Slice View)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="img-container" style="margin-top: 30px; height: 250px;">
+                <p>Visualization Data Placeholder</p>
+                <!-- Could generate another image for this later if needed -->
+            </div>
+        </div>
+
+        <!-- Slide 5: Advanced Rendering -->
+        <div class="slide">
+            <h2>Advanced Rendering Tech</h2>
+            <div class="grid-2">
+                <div>
+                    <div class="card">
+                        <h3>HDlive Surface</h3>
+                        <p>가상의 광원을 이동시켜 그림자와 깊이감을 생성, 실사 수준의 피부 질감을 표현.</p>
+                        <p class="samsung-highlight">➜ Samsung: RealisticVue™</p>
+                    </div>
+                    <div class="card" style="margin-top: 20px;">
+                        <h3>HDlive Silhouette</h3>
+                        <p>투명도 조절을 통해 내부 골격 및 장기 구조를 투시하듯 시각화.</p>
+                        <p class="samsung-highlight">➜ Samsung: CrystalVue™</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="height: 100%;">
+                        <h3>STIC (Spatio-Temporal Image Correlation)</h3>
+                        <p>태아 심장의 한 주기를 4D 슬로우 모션으로 재구성하여 미세한 심장 기형을 진단.</p>
+                        <p class="samsung-highlight" style="margin-top: 10px;">➜ Samsung: 5D Heart Color™</p>
+                        <div class="img-container"
+                            style="height: 180px; margin-top: 20px; border: none; background: rgba(0,0,0,0.5);">
+                            <p style="font-size: 0.9rem;">Rendering Simulation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Automation -->
+        <div class="slide">
+            <h2>Automation & Measurement Tools</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>SonoVCAD</h3>
+                    <p class="samsung-highlight">Samsung: 5D Heart™ / LaborAssist™</p>
+                    <p>표준 단면 자동 추출. 태아 심장 또는 분만 진행 상황을 자동 계측하여 초보자 진단 보조.</p>
+                </div>
+                <div class="card">
+                    <h3>SonoAVC</h3>
+                    <p class="samsung-highlight">Samsung: 5D Follicle™</p>
+                    <p>난소 내 난포(Follicle) 자동 인식 및 개수/부피 3D 측정 리스트화. 난임 클리닉 필수 기능.</p>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <h3>SonoBiometry</h3>
+                    <p class="samsung-highlight">Samsung: BiometryAssist™</p>
+                    <p>딥러닝 기반 태아 주요 생체 지표(HC, AC 등) 원클릭 자동 계측으로 검사 시간 단축.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: ROI Simulation -->
+        <div class="slide">
+            <h2>ROI Simulation: Patient Throughput</h2>
+            <p>오프라인 워크스테이션 도입 시 장비 점유 시간을 획기적으로 줄여 경제적 효과 제공</p>
+
+            <div class="chart-container">
+                <div class="bar-group">
+                    <div class="bar-label">
+                        <span>Console Only Analysis</span>
+                        <span>2 Patients / hr</span>
+                    </div>
+                    <div class="bar-bg">
+                        <div class="bar-fill fill-gray" data-width="33%"></div>
+                    </div>
+                </div>
+
+                <div class="bar-group">
+                    <div class="bar-label">
+                        <span style="color:var(--primary-color)">With Offline Workstation</span>
+                        <span style="color:var(--primary-color)">6 Patients / hr (3x)</span>
+                    </div>
+                    <div class="bar-bg">
+                        <div class="bar-fill fill-blue" data-width="100%">300% Efficiency</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card"
+                style="margin-top: 30px; display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                    <h3>경제적 가치 증명</h3>
+                    <ul>
+                        <li>장비 회전율 30% 증가 = 연간 수억 원 추가 매출 기대</li>
+                        <li>하루 5명 환자 추가 진료 시뮬레이션 제시 ➔ 3개월 내 ROI 회수 증명</li>
+                    </ul>
+                </div>
+                <div style="font-size: 3rem; color: var(--primary-color); font-weight: bold; margin-left: 20px;">
+                    300%
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Q&A - Weakness -->
+        <div class="slide">
+            <h2>Strategy Q&A: 경쟁 우위</h2>
+            <div class="qa-box">
+                <div class="question">GE의 약점과 우리의 공략 포인트는?</div>
+                <div class="answer">
+                    <strong>약점:</strong> Vendor Lock-in (폐쇄성)<br>
+                    <strong>전략:</strong> 'Open Connectivity' (타사 데이터 포용) + AI 기반 One-Click 자동화
+                </div>
+            </div>
+            <div class="qa-box">
+                <div class="question">의사들이 반드시 사야 할 Killer Feature는?</div>
+                <div class="answer">
+                    <strong>'Time-saving AI'</strong><br>
+                    수동 조작이 많은 GE 대비, 병변 자동 탐지 및 리포트 자동 생성으로 판독 시간 50% 단축 소구.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Q&A - Market Entry -->
+        <div class="slide">
+            <h2>Strategy Q&A: 시장 진입 모델</h2>
+            <div class="grid-2">
+                <div class="qa-box" style="height: 100%;">
+                    <div class="question">최적의 영업 모델은? (번들링 vs 별도)</div>
+                    <div class="answer">
+                        <strong>Hybrid 전략:</strong><br>
+                        - High-end: 번들링으로 점유율 확대<br>
+                        - Mid-range/구형: 구독형(SaaS)으로 진입 장벽 제거
+                    </div>
+                </div>
+                <div class="qa-box" style="height: 100%;">
+                    <div class="question">GE EchoPAC 대비 심장(Cardiac) 우위는?</div>
+                    <div class="answer">
+                        <strong>UI/UX & Display:</strong><br>
+                        복잡한 EchoPAC 대비 '직관적인 Touch & Drag UI'와 삼성의 시각화 기술로 승부.
+                    </div>
+                </div>
+            </div>
+            <div class="qa-box" style="margin-top: 20px;">
+                <div class="question">클라우드 보안 우려에 대한 해결책은?</div>
+                <div class="answer">
+                    <strong>'On-Premise AI Edge'</strong><br>
+                    병원 내부망 Edge Server 활용. 외부망 접속 없이 원내 EMR/PACS와 초고속/보안 연동.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Q&A - Marketing -->
+        <div class="slide">
+            <h2>Strategy Q&A: 마케팅 & 방어</h2>
+            <div class="qa-box">
+                <div class="question">기존 PACS 뷰어와의 위화감 해소는?</div>
+                <div class="answer">
+                    <strong>'Seamless Plugin' 방식</strong><br>
+                    별도 실행이 아닌 PACS 위 오버레이(Overlay) 형태로 'Invisible Tech' 구현.
+                </div>
+            </div>
+            <div class="qa-box">
+                <div class="question">AI 임상 가치 증명 방법은?</div>
+                <div class="answer">
+                    <strong>'재현성(Reproducibility)'</strong><br>
+                    숙련도와 무관한 표준화된 결과 산출 ➔ 오진 방지 가치 강조.
+                </div>
+            </div>
+            <div class="qa-box">
+                <div class="question">로컬(개원가) 시장 공격 포인트는?</div>
+                <div class="answer">
+                    <strong>'환자 경험(PX) 솔루션'</strong><br>
+                    대형 TV 실시간 4D 미러링, 환자 모바일 영상 즉시 전송 등 쇼맨십 기능 제공.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Future Connectivity -->
+        <div class="slide">
+            <h2>Future Connectivity & Trends</h2>
+            <div class="grid-2">
+                <div class="card" style="border-left: 5px solid #28a745;">
+                    <h3>On-Premise Security Hub</h3>
+                    <p>외부 망 접속 없이 병원 내부 서버(Intranet)에서 데이터를 안전하게 공유.</p>
+                    <p>원내 협진(In-hospital Consultation)을 지원하는 강력한 보안 솔루션.</p>
+                </div>
+                <div class="card" style="border-left: 5px solid #6610f2;">
+                    <h3>On-Device AI Learning</h3>
+                    <p>축적된 4D Raw Data를 외부 반출 없이 원내 엣지 서버에서 학습.</p>
+                    <p>해당 병원에 특화된 맞춤형 진단 보조 모델로 진화.</p>
+                </div>
+            </div>
+            <div style="margin-top:40px; display:flex; gap: 30px; justify-content: center;">
+                <div class="img-container" style="width:45%; height:200px;">
+                    <p>Security Hub Diagram</p>
+                </div>
+                <div class="img-container" style="width:45%; height:200px;">
+                    <p>AI Learning Diagram</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls-area">
+            <span class="page-indicator" id="page-indicator">1 / 11</span>
+            <button class="nav-btn" id="prevBtn" aria-label="Previous Slide">
+                <!-- Chevron Left SVG -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="nav-btn" id="nextBtn" aria-label="Next Slide">
+                <!-- Chevron Right SVG -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
