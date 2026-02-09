@@ -31,6 +31,10 @@
 - 간단한 애니메이션 트리거 추가 (Vanilla JS 또는 CSS 클래스를 활용한 GSAP 유사 효과).
 - ROI 차트 애니메이션 로직.
 
+#### [수정] Comparison Slide 추가
+- 슬라이드 3 위치에 Samsung 5D Viewer vs GE 4D View 비교 슬라이드 추가.
+- 자동화(삼성) vs 정밀 제어(GE) 철학 비교.
+
 ### [에셋]
 - 플레이스홀더를 대체할 배경 및 컨셉 이미지 생성.
 

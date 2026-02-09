@@ -7,3 +7,9 @@
 - [x] 인터랙티브 요소를 위한 `script.js` 생성/업데이트 (필요 시) <!-- id: 4 -->
 - [x] 새로운 디자인에 맞춰 `index.html` 구조 업데이트 <!-- id: 5 -->
 - [x] 새로운 디자인 검증 <!-- id: 6 -->
+- [x] 한국어 문서 번역 (`TASK_KR.md` 등) <!-- id: 7 -->
+- [x] GitHub 푸시 (`https://github.com/redspy/workstation_sterategy.git`) <!-- id: 8 -->
+- [x] Samsung 5D vs GE 4D 기능 조사 <!-- id: 9 -->
+- [x] `index.html`에 비교 슬라이드(Slide 3) 추가 <!-- id: 10 -->
+- [x] 한국어 문서 업데이트 <!-- id: 11 -->
+- [x] 새로운 슬라이드 검증 <!-- id: 12 -->
